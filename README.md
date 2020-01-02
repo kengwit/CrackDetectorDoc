@@ -6,7 +6,7 @@ Crack Detection using Machine Learning
 
 **This is work in progress.**
 
-This repository documents the progress on the development of the convolution neural network to perform crack detection. 
+This repository documents the progress on the development of convolutional neural networks (CNNs) to perform crack detection. 
 
 
 # Data Preparation
@@ -18,7 +18,7 @@ Image size is 128 by 128. Note that in the paper above, input images are 256 by 
 
 # The Neural Network
 
-The current implemented convolution neural network is based on the paper:
+The current implemented CNN is based on the paper:
 
 Young-Jin Cha and Wooram Choi - "Deep Learning-Based Crack Damage Detection Using Convolutional Neural Networks"
 https://www.researchgate.net/publication/315613676_Deep_Learning-Based_Crack_Damage_Detection_Using_Convolutional_Neural_Networks
@@ -38,7 +38,7 @@ Current performance of the CNN is indicated in the figure below.
 
 <br/>![](./figures/Performance.png)<br/><br/>
 
-Although the loss and accuracy appears to be good, and overfitting does not appear to be a problem, there are large fluctuations in the loss and accuracy during the validation steps. This might be due to the small size of current validation dataset (less than 100 images). 
+Although the loss and accuracy appear good, and overfitting does not appear to be an issue, there are large fluctuations in the loss and accuracy during the validation steps. This might be due to the small size of current validation dataset (less than 100 images). 
 
 # TODO List
 
