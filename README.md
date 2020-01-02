@@ -34,11 +34,11 @@ The code is in Python using Tensorflow 2.0.
 
 # Performance
 
-Current performance is indicated in the figure below. 
+Current performance of the CNN is indicated in the figure below. 
 
 <br/>![](./figures/Performance.png)<br/><br/>
 
-Although the loss and accuracy appears to be good, and there overfitting does not appear to be a problem, there are large fluctuations in the loss and accuracy during the validation steps. This might be due to the small size of current validation dataset (less than 100 images). 
+Although the loss and accuracy appears to be good, and overfitting does not appear to be a problem, there are large fluctuations in the loss and accuracy during the validation steps. This might be due to the small size of current validation dataset (less than 100 images). 
 
 # TODO List
 
