@@ -11,7 +11,7 @@ This repository documents the progress on the development of the convolution neu
 
 # Data Preparation
 
-The basic image dataset is obtained from [here](https://drive.google.com/file/d/1kC60RGO3rcScVk7HY-s7tTMJeMbADfh1/view)
+The basic image dataset is obtained from [here](https://drive.google.com/file/d/1kC60RGO3rcScVk7HY-s7tTMJeMbADfh1/view).
 
 Image size is 128 by 128. Note that in the paper above, input images are 256 by 256.
 
@@ -23,7 +23,7 @@ The current implemented convolution neural network is based on the paper:
 Young-Jin Cha and Wooram Choi - "Deep Learning-Based Crack Damage Detection Using Convolutional Neural Networks"
 https://www.researchgate.net/publication/315613676_Deep_Learning-Based_Crack_Damage_Detection_Using_Convolutional_Neural_Networks
 
-<br/>![](./figures/CNN1.png	)<br/><br/>
+<br/>![](./figures/CNN1.PNG	)<br/><br/>
 
 
 In the implementation here, we use the Adams solver instead of the Stochastic Gradient Descent described in the paper.
