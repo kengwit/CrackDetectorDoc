@@ -46,9 +46,9 @@ The code is in Python using Tensorflow 2.0.
 
 The performances of the CNNs are indicated in the figure below. 
 
-<br/>![Using binary cross-entropy loss](./figures/performance_binary.png)<br/><br/>
+<br/>[Using binary cross-entropy loss](./figures/performance_binary.png)<br/><br/>
 
-<br/>![Using categorical cross-entropy loss](./figures/performance_binary.png)<br/><br/>
+<br/>[Using categorical cross-entropy loss](./figures/performance_binary.png)<br/><br/>
 
 
 Although the loss and accuracy appear good, and overfitting does not appear to be an issue, there are large fluctuations in the loss and accuracy during the validation steps. This might be due to the small size of the current validation dataset (less than 100 images). 
@@ -95,5 +95,5 @@ Although the loss and accuracy appear good, and overfitting does not appear to b
     https://stats.stackexchange.com/questions/363592/what-influences-fluctuations-in-validation-accuracy
     
     
-
+    Using K-Fold Cross Validation with Keras (5.2) https://bit.ly/35vtAmY
 
