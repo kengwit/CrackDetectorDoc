@@ -44,20 +44,17 @@ The code is in Python using Tensorflow 2.0.
 
 We use 3000 training images and 600 validation images. 
 
-We use the Adams solver instead of the Stochastic Gradient Descent described in the paper. The learning rate is set at <img src="/tex/34354a46a18b0c77496be11a1a51c397.svg?invert_in_darkmode&sanitize=true" align=middle width=37.26613934999999pt height=26.76175259999998pt/>
+We use the Adams solver instead of the Stochastic Gradient Descent described in the paper. The learning rate is set at <img src="/tex/6a6e393969fe7187998323526c79bd54.svg?invert_in_darkmode&sanitize=true" align=middle width=37.26613934999999pt height=26.76175259999998pt/>
 
 Batch size is set to 64.
 
 The performances of the CNNs are indicated in the figures below. 
 
-<br/>![](./figures/performance_binary.png)<br/>
 *Using binary cross-entropy loss*
-<br/>
+<br/>![](./figures/performance_binary.png)<br/><br/>
 
-<br/>![](./figures/performance_binary.png)<br/>
 *Using categorical cross-entropy loss*
-<br/>
-
+<br/>![](./figures/performance_binary.png)<br/><br/>
 
 Although the loss and accuracy appear good, and overfitting does not appear to be an issue, there are large fluctuations in the loss and accuracy during the validation steps. This might be due to the small size of the current validation dataset (less than 100 images). 
 
