@@ -50,14 +50,11 @@ Batch size is set to 64.
 
 The performances of the CNNs are indicated in the figures below. 
 
-<br/>![](./figures/performance_binary.png)<br/>
 *Using binary cross-entropy loss*
-<br/>
+<br/>![](./figures/performance_binary.png)<br/><br/>
 
-<br/>![](./figures/performance_binary.png)<br/>
 *Using categorical cross-entropy loss*
-<br/>
-
+<br/>![](./figures/performance_binary.png)<br/><br/>
 
 Although the loss and accuracy appear good, and overfitting does not appear to be an issue, there are large fluctuations in the loss and accuracy during the validation steps. This might be due to the small size of the current validation dataset (less than 100 images). 
 
