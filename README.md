@@ -11,9 +11,14 @@ This repository documents the progress on the development of convolutional neura
 
 # Data Preparation
 
-The basic image dataset is obtained from [here](https://drive.google.com/file/d/1kC60RGO3rcScVk7HY-s7tTMJeMbADfh1/view).
+The image datasets are obtained from: 
+    
+    https://drive.google.com/file/d/1kC60RGO3rcScVk7HY-s7tTMJeMbADfh1/view
+    
+    https://data.mendeley.com/datasets/5y9wdsg2zt/2
+    
 
-Image size is 128 by 128. Note that in the paper above, input images are 256 by 256.
+All images are 128 by 128. Note that in the paper above, input images are 256 by 256.
 
 
 # The Neural Network
@@ -25,8 +30,13 @@ https://www.researchgate.net/publication/315613676_Deep_Learning-Based_Crack_Dam
 
 <br/>![](./figures/CNN1.PNG	)<br/><br/>
 
+We test binary cross-entropy and categorical cross-entropy losses. For the former, the CNN resembles that described in the above figure whereas for the latter, layer 7 (L7) is replaced by a single node, and the softmax activation function is replaced by the sigmoid function.
 
-In the implementation here, we use the Adams solver instead of the Stochastic Gradient Descent described in the paper.
+To minimize overfitting, dropout regularization is used between layer 6 (L6) and layer 7 (L6). The dropout rate is set to 0.5.
+
+We use the Adams solver instead of the Stochastic Gradient Descent described in the paper. The learning rate is set at $5.e^{-5}$
+
+Batch size is set to 64.
 
 # Code
 
@@ -34,9 +44,12 @@ The code is in Python using Tensorflow 2.0.
 
 # Performance
 
-Current performance of the CNN is indicated in the figure below. 
+The performances of the CNNs are indicated in the figure below. 
 
-<br/>![](./figures/Performance.png)<br/><br/>
+<br/>![Using binary cross-entropy loss](./figures/performance_binary.png)<br/><br/>
+
+<br/>![Using categorical cross-entropy loss](./figures/performance_binary.png)<br/><br/>
+
 
 Although the loss and accuracy appear good, and overfitting does not appear to be an issue, there are large fluctuations in the loss and accuracy during the validation steps. This might be due to the small size of the current validation dataset (less than 100 images). 
 
@@ -44,9 +57,7 @@ Although the loss and accuracy appear good, and overfitting does not appear to b
 
 1. Increase number of images in training and validation datasets.
 
-2. Explore some of the other suggestions discussed in this StackExchange thread:
-
-    https://stats.stackexchange.com/questions/345990/why-does-the-loss-accuracy-fluctuate-during-the-training-keras-lstm
+2. Implement a K-fold cross validation procedure.
 
 3. Explore other CNNs such as those described in these papers:
 
@@ -75,5 +86,14 @@ Although the loss and accuracy appear good, and overfitting does not appear to b
 
 
 
+# References
+    
+    https://stats.stackexchange.com/questions/345990/why-does-the-loss-accuracy-fluctuate-during-the-training-keras-lstm
+    
+    https://gombru.github.io/2018/05/23/cross_entropy_loss/
+    
+    https://stats.stackexchange.com/questions/363592/what-influences-fluctuations-in-validation-accuracy
+    
+    
 
 
