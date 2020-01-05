@@ -34,9 +34,7 @@ We test binary cross-entropy and categorical cross-entropy losses. For the forme
 
 To minimize overfitting, dropout regularization is used between layer 6 (L6) and layer 7 (L6). The dropout rate is set to 0.5.
 
-We use the Adams solver instead of the Stochastic Gradient Descent described in the paper. The learning rate is set at $5.e^{-5}$
 
-Batch size is set to 64.
 
 # Code
 
@@ -44,11 +42,21 @@ The code is in Python using Tensorflow 2.0.
 
 # Performance
 
-The performances of the CNNs are indicated in the figure below. 
+We use 3000 training images and 600 validation images. 
 
-<br/>[Using binary cross-entropy loss](./figures/performance_binary.png)<br/><br/>
+We use the Adams solver instead of the Stochastic Gradient Descent described in the paper. The learning rate is set at $5.e^{-5}$
 
-<br/>[Using categorical cross-entropy loss](./figures/performance_binary.png)<br/><br/>
+Batch size is set to 64.
+
+The performances of the CNNs are indicated in the figures below. 
+
+<br/>![](./figures/performance_binary.png)<br/>
+*Using binary cross-entropy loss*
+<br/>
+
+<br/>![](./figures/performance_binary.png)<br/>
+*Using categorical cross-entropy loss*
+<br/>
 
 
 Although the loss and accuracy appear good, and overfitting does not appear to be an issue, there are large fluctuations in the loss and accuracy during the validation steps. This might be due to the small size of the current validation dataset (less than 100 images). 
