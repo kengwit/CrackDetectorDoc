@@ -44,7 +44,7 @@ The code is in Python using Tensorflow 2.0.
 
 We use 3000 training images and 600 validation images. 
 
-We use the Adams solver instead of the Stochastic Gradient Descent described in the paper. The learning rate is set at <img src="/tex/6a6e393969fe7187998323526c79bd54.svg?invert_in_darkmode&sanitize=true" align=middle width=37.26613934999999pt height=26.76175259999998pt/>
+We use the Adams solver instead of the Stochastic Gradient Descent described in the paper. The learning rate is set at <img src="/tex/a0bb306e2d7163dd51446be9c0cbccf6.svg?invert_in_darkmode&sanitize=true" align=middle width=61.575388049999994pt height=26.76175259999998pt/>
 
 Batch size is set to 64.
 
