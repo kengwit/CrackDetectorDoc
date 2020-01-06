@@ -18,7 +18,7 @@ The image datasets are obtained from:
     https://data.mendeley.com/datasets/5y9wdsg2zt/2
     
 
-All images are 128 by 128. Note that in the paper above, input images are 256 by 256.
+Input size for images are set at 128 by 128. Note that in the paper above, input images are 256 by 256.
 
 
 # The Neural Network
